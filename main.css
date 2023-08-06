@@ -187,6 +187,16 @@ a > .fab, a > .fas, a > .fa-solid{
 }
 
 /*
+center images class 
+*/
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
 .fab, .fas, .fa-solid{
   vertical-align: middle;
   background-color: #333;
