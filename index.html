@@ -6,6 +6,7 @@ notes:
 <br> means line breaks 
 <ul> means unordered list 
 <li> means link
+<a> means the a tag inside the class div, topnav, h1, etc.
 
 how links work: 
 <a href="https://google.com" target="_blank">LINK TEXT</a>
@@ -32,8 +33,6 @@ For more icons like social media logos, see fontawesome.com
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="stylesheet" type="text/css" href="color.css" />
-
-
 <link rel="stylesheet" src="assets/fontawesome-free-6.4.2-web/css/v5-font-face.min.css" />
 
 <!--
@@ -47,12 +46,27 @@ The title is what appears in the tab label on a browser.
 -->
 
 <body>
+
 <div class="list">
 
 	<!--
 		This is your name that appears at the top of the webpage
 	--> 
 	<h1 class="name">McKenna Wilds</h1>
+
+	<!--
+	create navigation menu
+	-->
+	<div class="topnav">
+		<div class="topnav-centered">
+			<a href="./index.html" class="active">Home</a>
+			<a href="./about.html" class="inactive">About</a>
+			<a href="./writing.html" class="inactive">Writing</a>
+			<a href="./contact.html" class="inactive">Contact</a>
+		</div>
+	</div>
+
+
 	<!--
 		space for filling in bio
 	--> 
@@ -61,7 +75,6 @@ The title is what appears in the tab label on a browser.
 			<h3>about</h3>
 		</div>
 		Space for a bio
-
 	</div>
 
 	<h3>full-length</h3>

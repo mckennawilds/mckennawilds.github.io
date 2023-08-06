@@ -21,18 +21,22 @@ html, body{
 
 /*
 h1 is the bold "Your Name" at the top of the page.
- */
 
 h1{
-color: #900C3F;
+color: black;
 }
+
+already done in main.css
+ */
+
+
 
 /*
 h3 is used for the subheadings, like "full-length"
  */
 
 h3{
-  color: #313D1D;
+  color: #651301; 
 }
 
 /*
@@ -40,7 +44,7 @@ h4 is used for the dates in this template
  */
 
 h4{
-  color: #111111;
+  color: #313D1D;
 }
 
 /*

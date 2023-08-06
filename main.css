@@ -12,13 +12,16 @@ body{
   background-color: #eee;
 }
 
+small headers were originally 'Square Peg', Handwriting;
+
  */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 @import url('https://fonts.googleapis.com/css?family=Zeyada');
 @import url('https://fonts.googleapis.com/css?family=Square+Peg');
-
+@import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
+@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');
 
 html{
   background-color: #eee;
@@ -32,18 +35,89 @@ body{
   background-color: #eee;
 }
 
-h1, h2, h3{
-  font-family: 'Square Peg', Handwriting;
+h1{
+  font-family: 'Mrs Saint Delafield', Handwriting;
+  color: black;
+  font-size: 80px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0em;
+  margin-bottom: 0em;
 }
 
-h1{
-  font-weight: 900;
-  font-size: 3em;
+.topnav {
+  position: relative;
+  width: 100%;
+  margin: 1em;
   text-align: center;
-  color: #333;
-  padding: 0em;
-  margin-bottom: 2em;
 
+  /*
+  overflow: hidden;
+  */
+}
+
+/* Style the links inside the navigation bar 
+originally soft gray #f2f2f2 */
+.topnav a {
+  float: none;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  /*
+  background-color: #04AA6D;
+  color: white;
+  */
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* Remove color for the inactive/not current link */
+.topnav a.inactive {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* Centered section inside the top navigation 
+position: absolute; 
+
+
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  margin: 5px;
+
+  display: inline-block;
+*/
+.topnav-centered a {
+  float: none;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+}
+
+.topnav-centered a:hover {
+  color: 651301;
+}
+
+
+h2, h3{
+  font-family: 'La Belle Aurore', Handwriting;
 }
 
 h3{
@@ -152,6 +226,9 @@ a > .fab, a > .fas, a > .fa-solid{
           text-align: center;
           margin: 2em 0 0 0;
           padding: 0;
+          /*
+          decide font size here later -- is this for phone screens?
+          */
           font-size: 2em;
         }
         .list{
@@ -167,5 +244,19 @@ a > .fab, a > .fas, a > .fa-solid{
 
         .bioTitle{
           display: block;
+        }
+
+        /* Add responsiveness - on screens less than 500px, make the navigation 
+        links appear on top of each other, instead of next to each other */
+        .topnav a {
+          float: none;
+          display: block;
+        }
+
+        .topnav-centered a {
+          position: relative;
+          top: 0;
+          left: 0;
+          transform: none;
         }
     }
