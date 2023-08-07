@@ -1,4 +1,11 @@
-To-DO
-- find out how to track website stats on GitHub
-- decide on landing page 
-- find out where contact form goes
+Hi <?php echo htmlspecialchars($_POST['name']); ?>.
+Thank you for your message.
+
+
+<!--
+	https://www.php.net/manual/en/tutorial.forms.php
+	
+example
+Hi <?php echo htmlspecialchars($_POST['name']); ?>.
+You are <?php echo (int)$_POST['age']; ?> years old.
+-->
