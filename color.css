@@ -29,7 +29,16 @@ color: black;
 already done in main.css
  */
 
+button{
+	color: #651301;
+}
 
+
+/* h2 is basically my subtitle */
+h2.block{
+  background-color: #651301; 
+  color: white;
+}
 
 /*
 h3 is used for the subheadings, like "full-length"

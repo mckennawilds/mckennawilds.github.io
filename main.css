@@ -115,14 +115,28 @@ position: absolute;
   color: 651301;
 }
 
-
 h2, h3{
-  font-family: 'La Belle Aurore', Handwriting;
+  font-family: 'EB Garamond', serif;
+  /* previously 'La Belle Aurore', Handwriting; */
+}
+
+/* h2 is basically my subtitle */
+h2.block{
+	font-weight: 500; 
+	font-style: italic;
+	position: relative;
+	text-decoration: none;
+	float: none;
+  	top: 50%;
+	text-align: center;
+	width: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 h3{
   font-weight: 900;
-  font-size: 2em;
+  /*font-size: 2em;*/
   padding-top: 1.5em;
 }
 

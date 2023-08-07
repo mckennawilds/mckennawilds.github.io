@@ -6,6 +6,7 @@ notes:
 <br> means line breaks 
 <ul> means unordered list 
 <li> means link
+<a> means the a tag inside the class div, topnav, h1, etc.
 
 how links work: 
 <a href="https://google.com" target="_blank">LINK TEXT</a>
@@ -18,7 +19,7 @@ For more icons like social media logos, see fontawesome.com
 <html land="en" dir="ltr">
 
 <!--
-------------------------- HEADER -------------------------
+------------------------- HEAD -------------------------
 <link rel="stylesheet" href="https:use.fontawesome.com/releases/v.6.4.2/css/all.css" />
 
 <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/v5-font-face.min.css" />
@@ -32,8 +33,6 @@ For more icons like social media logos, see fontawesome.com
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 <link rel="stylesheet" type="text/css" href="main.css" />
 <link rel="stylesheet" type="text/css" href="color.css" />
-
-
 <link rel="stylesheet" src="assets/fontawesome-free-6.4.2-web/css/v5-font-face.min.css" />
 
 <!--
@@ -43,33 +42,93 @@ The title is what appears in the tab label on a browser.
 </head>
 
 <!--
--------------------------BODY -------------------------
+------------------------- BODY -------------------------
 -->
 
 <body>
+
 <div class="list">
+<!--
+------------------------- TITLE -------------------------
+-->
 
 	<!--
 		This is your name that appears at the top of the webpage
 	--> 
 	<h1 class="name">McKenna Wilds</h1>
-	<!--
-		space for filling in bio
-	--> 
-	<div class="bio">
-		<div class="bioTitle">
-			<h3>about</h3>
+	<h2 class="block">poet & wanderer & mystic & feminist & bi woman</h2>
+
+<!--
+------------------------- NAVIGATION MENU -------------------------
+-->
+	<div class="topnav">
+		<div class="topnav-centered">
+			<a href="./index.html" class="inactive">Home</a>
+			<a href="./about.html" class="active">About</a>
+			<a href="./writing.html" class="inactive">Writing</a>
+			<a href="./contact.html" class="inactive">Contact</a>
 		</div>
-		Space for a bio
+	</div>
+
+<!--
+------------------------- IMAGE -------------------------
+max-width=100%,
+-->
+	<img src="assets/imgs/mark-tegethoff-NbgQfUvKFE0-unsplash.jpg", alt="moon phases", width='1000', height=auto, class='center'>
+
+
+<!--
+------------------------- BIO -------------------------
+-->
+	<div>
+		
+		<h2>About</h2>
+		
+		<!--
+		<h2>McKenna Wilds is a poet, fiction and creative-nonfiction writer, feminist, and bi woman.</h2>
+		-->
+
+
+		<h3>the folklorist & fabulist</h3>
+		McKenna Wilds is particularly fascinated by the weird and mystical. As a poet and storyteller, she enjoys exploring the dark or hidden beauty of old myths, legends, and folktales and how they might reveal truths about ourselves and our world. 
+
+
+		<h3>the raging feminist</h3>
+		Inspired by her conservative, homeschooled childhood in the Bible Belt, McKenna Wilds now has a passion for exposing Christian patriarchy and encouraging this generation to choose love above all else. As a bisexual woman, she seeks to showcase the hopes and struggles of queerness through her writing, which is often inspired by her transition from conservative homeschooler to raging feminist. 
+
+
+		<h3>the spiritualist</h3>
+		McKenna Wilds explores the minimalism of spirituality – how it’s often the little things that feel the most divine, like a calm Saturday morning, a deep breath, a long conversation with a loved one, or wildflower that blooms after the last snow. Her writing often reflects her experiences discovering healthy spirituality, a love for life, and a sense of awe. 
+
+
+		<h3>the old soul</h3>
+		Over the years, McKenna Wilds has lived in Florida, Georgia, South Carolina, Alabama, California, and now Colorado with her husband and goldendoodle. Most nights, she lives wild and free until 9 pm when she'll be found cozy in bed with a good book, a cup of tea, and too many blankets.
 
 	</div>
 
+
+<!--
+------------------------- ICONS -------------------------
+-->
 
 	<!--
 	contact section with social buttons
 	how to add icons https://fontawesome.com/docs/web/add-icons/how-to 
 
+	as svg internally defined 
+		<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+	
+	as image
+		<a href="mailto:mckenna.wilds@gmail.com"><img src="assets/fontawesome-free-6.4.2-web/svgs/regular/envelope.svg", alt="envelope", width="25" height="25"></img></a>
+
+	for accessibility use span not i 
+		<a href="mailto:mckenna.wilds@gmail.com"><span class="fa-solid fa-envelope"></span></a>
 	-->
+
+<!--
+------------------------- CONTACT -------------------------
+-->
+
 	<div class="contact">
 		<h3>contact</h3>
 
