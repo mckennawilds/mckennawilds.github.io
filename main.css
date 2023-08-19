@@ -44,6 +44,7 @@ body{
   color: #111;
   background-color: #eee;
 
+
   /* height: 100%; for paralllax effect image scroll */
 }
 
@@ -186,12 +187,16 @@ h2{
 	font-family: Josefin Sans;
 	color: black;
 	font-size: 45px;
-  	font-weight: 100;
+  	font-weight: 150;
 }
 
 h3{
   font-family: 'EB Garamond', serif;
-  /* previously 'La Belle Aurore', Handwriting; */
+  font-weight: 900;
+  /*
+   previously 'La Belle Aurore', Handwriting;
+   font-size: 2em;
+  padding-top: 1.5em;*/
 }
 
 /* h2 is basically my subtitle */
@@ -208,17 +213,26 @@ h2.block{
 	transform: translate(-50%, -50%);
 }
 
-h3{
-  font-weight: 900;
-  /*font-size: 2em;*/
-  padding-top: 1.5em;
-}
-
 h4{
   font-weight: 900;
 }
 
+.writingtitles{
+	padding: 3em 8em;
+	animation: fadein 2s;
+	position: relative;
+	z-index: 0;
+}
+
+.writingtitles a{
+  font-size: 100px;
+  color: #B4B4B4; /* gray */
+  padding: 0px;
+  line-height: 70px;
+}
+
 .list{
+  /* padding: 0em 8em 0em 8em; */
   padding: 3em 8em;
   animation: fadein 2s;
   position: relative;
@@ -227,7 +241,7 @@ h4{
 
 
 a, a:visited {
-  color: #000;
+  /*color: #000;*/
   text-decoration: none;
   line-height: 1.6em;
 }
