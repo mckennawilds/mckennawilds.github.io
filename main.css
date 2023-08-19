@@ -21,7 +21,15 @@ small headers were originally 'Square Peg', Handwriting;
 @import url('https://fonts.googleapis.com/css?family=Zeyada');
 @import url('https://fonts.googleapis.com/css?family=Square+Peg');
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
+@import url('https://fonts.googleapis.com/css?family=Qwitcher+Grypen');
+
 /*@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');*/
+
+/*
+#wrapper{
+margin: 0 auto;
+}
+*/
 
 html{
   background-color: #eee;
@@ -33,12 +41,56 @@ body{
   font-size: 16px;
   color: #111;
   background-color: #eee;
+
+  /* height: 100%; for paralllax effect image scroll */
 }
 
+
+/* 
+good is 
+https://blog.hubspot.com/website/parallax-scrolling  
+
+best is
+https://blog.logrocket.com/create-parallax-scrolling-css/#:~:text=Decreasing%20the%20value%20for%20translateZ,slower%20than%20translateZ(%2D1px)%20.
+.parallax {
+  background-image: url("assets/imgs/neelkamal-deka-gwYhY4POEzc-unsplash.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  -webkit-transform: translateZ(-99px) scale(2);
+  transform: translateZ(-99px) scale(2);
+  z-index: 3;
+
+div{
+  font-size: 50px;
+  text-align: center;
+}
+}
+*/
+.backgroundflowers {
+  background-image: url("assets/imgs/neelkamal-deka-gwYhY4POEzc-unsplash.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.copyright {
+	text-align: center;
+	padding: 25px;
+}
+
+
+
 h1{
-  font-family: 'Mrs Saint Delafield', Handwriting;
+  font-family: 'Qwitcher Grypen', Handwriting;
   color: black;
-  font-size: 80px;
+  /*font-size: 80px;*/
+  font-size: 120px;
   font-weight: 400;
   text-align: center;
   padding: 0em;
@@ -72,7 +124,9 @@ originally soft gray #f2f2f2 */
 }
 
 .topnav ul{
+  /* for white block around menu options
   display: inline-block;
+  */
   list-style-type: none;
 }
 
@@ -87,14 +141,17 @@ originally soft gray #f2f2f2 */
   /*
   background-color: #04AA6D;
   color: white;
-  */
+  
   background-color: #FFFFFF;
+  */
   color: black;
 }
 
 /* Remove color for the inactive/not current link */
 .topnav a.inactive {
+	/* 
   background-color: #FFFFFF;
+  */
   color: black;
 }
 
@@ -287,4 +344,10 @@ a > .fab, a > .fas, a > .fa-solid{
           left: 0;
           transform: none;
         }
+
+        /*
+        .parallax {
+		    background-attachment: scroll;
+		}
+		*/
     }
