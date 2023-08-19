@@ -22,6 +22,8 @@ small headers were originally 'Square Peg', Handwriting;
 @import url('https://fonts.googleapis.com/css?family=Square+Peg');
 @import url('https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield');
 @import url('https://fonts.googleapis.com/css?family=Qwitcher+Grypen');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
 
 /*@import url('https://fonts.googleapis.com/css?family=La+Belle+Aurore');*/
 
@@ -37,8 +39,8 @@ html{
 
 body{
   margin: 0;
-  font-family: 'EB Garamond', serif;
-  font-size: 16px;
+  font-family: Josefin Sans; /* 'EB Garamond', serif; */
+  font-size: 20px;
   color: #111;
   background-color: #eee;
 
@@ -87,11 +89,12 @@ div{
 
 
 h1{
-  font-family: 'Qwitcher Grypen', Handwriting;
+  font-family: Josefin Sans;
   color: black;
-  /*font-size: 80px;*/
-  font-size: 120px;
-  font-weight: 400;
+  /*font-size: 80px;
+  font-weight: 400;*/
+  font-size: 60px;
+  font-weight: 100;
   text-align: center;
   padding: 0em;
   margin-bottom: 0em;
@@ -104,23 +107,26 @@ img{
 .topnav {
   position: relative;
   width: 100%;
-  margin: 1em;
+  overflow: hidden;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
 
   /*
-  overflow: hidden;
+  margin: 1em;
   */
 }
 
 /* Style the links inside the navigation bar 
-originally soft gray #f2f2f2 */
+originally soft gray #f2f2f2 
+padding: 14px 16px;*/
 .topnav a {
   float: none;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 24px;
 }
 
 .topnav ul{
@@ -176,7 +182,14 @@ position: absolute;
   color: 651301;
 }
 
-h2, h3{
+h2{
+	font-family: Josefin Sans;
+	color: black;
+	font-size: 45px;
+  	font-weight: 100;
+}
+
+h3{
   font-family: 'EB Garamond', serif;
   /* previously 'La Belle Aurore', Handwriting; */
 }
