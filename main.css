@@ -85,8 +85,40 @@ div{
 .copyright {
 	text-align: center;
 	padding: 25px;
+	font-size: 15px;
+	font-weight: 200;
+	font-family: EB Garamond, serif;
 }
 
+.shadow_box {
+  transition: box-shadow .3s;
+  /*
+  width: 300px;
+  height: 500px;
+  margin: 50px;
+  float: left;
+  */
+  position: center;
+  padding: 50px;
+  margin: 25px 10px 25px 10px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  
+  
+}
+.shadow_box:hover {
+  /*box-shadow: 0 0 11px rgba(33,33,33,.2); */
+  /* inset | offset-x | offset-y | color */
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 25px rgba(33,33,33,.2); 
+  background-color: #F9F9F9;
+}
+
+.body_no_linkhover, .body_no_linkhover:hover {
+  text-decoration: none;
+
+}
 
 
 h1{
@@ -218,7 +250,8 @@ h4{
 }
 
 .writingtitles{
-	padding: 3em 8em;
+	/*padding: 3em 8em;*/
+	padding: 50px 300px 50px 300px;
 	animation: fadein 2s;
 	position: relative;
 	z-index: 0;
@@ -246,9 +279,6 @@ a, a:visited {
   line-height: 1.6em;
 }
 
-a:hover {
-  color: blue;
-}
 
 .bio{
   padding: 1.8em 0em 3em 2em;
