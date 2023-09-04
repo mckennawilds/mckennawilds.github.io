@@ -14,8 +14,23 @@ light olive is #93B557
 dark olive is #313D1D
  */
 
+:root {
+  --main-bg-color: white;
+  --orange: #FFA15C;
+  --magneta: #900C3F;
+  --light-magneta: #BF1054;
+  --olive: #93B557;
+
+  --light-green: #E1F4CB;
+  --sage: #BACBA9;
+  --dim-gray: #717568;
+  --dark-olive: #3F4739;
+  --text-color: #651301;
+  --black: #322624;
+}
+
 html, body{
-  background-color: #FFFFFF;
+  background-color: var(--main-bg-color);
   color: #651301;
 }
 
@@ -30,13 +45,13 @@ already done in main.css
  */
 
 button{
-	color: #651301;
+	color: var(--magneta);
 }
 
 
 /* h2 is basically my subtitle */
 h2.block{
-  background-color: #651301; 
+  background-color: var(--magneta); 
   color: white;
 }
 
@@ -45,7 +60,7 @@ h3 is used for the subheadings, like "full-length"
  */
 
 h3{
-  color: #651301; 
+  color: var(--magneta); 
 }
 
 /*
@@ -53,7 +68,7 @@ h4 is used for the dates in this template
  */
 
 h4{
-  color: #313D1D;
+  color: var(--dark-olive);
 }
 
 /*
@@ -69,7 +84,7 @@ This sets the colour of the link when you hover over it
  */
 
 a:hover {
-  color: #93B557;
+  color: var(--light-magneta);
 }
 
 /*
@@ -103,4 +118,8 @@ This sets the colour of icon itself when you hover over it
 
 a > .fab:hover, a > .fas:hover, a > .fa-solid:hover{
   color: #eeeeee;
+}
+
+.copyright {
+  color: var(--black);
 }

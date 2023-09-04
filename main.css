@@ -104,7 +104,16 @@ div{
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
-  
+}
+
+.shadow_box:hover {
+  /*box-shadow: 0 0 11px rgba(33,33,33,.2); */
+  /* inset | offset-x | offset-y | color */
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 0 25px rgba(33,33,33,.2); 
+  background-color: #F9F9F9;
+}
+ 
 headshot { 
   border-radius: 50%;
 }
@@ -113,17 +122,9 @@ headshot {
 .grid-container {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 20px; /* in new browsers just gap, older grid-gap */
 }
-  
-}
-.shadow_box:hover {
-  /*box-shadow: 0 0 11px rgba(33,33,33,.2); */
-  /* inset | offset-x | offset-y | color */
-  /* offset-x | offset-y | blur-radius | spread-radius | color */
-  box-shadow: 0 0 25px rgba(33,33,33,.2); 
-  background-color: #F9F9F9;
-}
+
 
 .body_no_linkhover, .body_no_linkhover:hover {
   text-decoration: none;
@@ -145,6 +146,10 @@ h1{
 
 img{
 	max-width: 100%; /* Should set the image to take up 100% of its containing element, fixes phone screen sizes. */
+}
+
+img.circle {
+  border-radius: 50%;
 }
 
 .topnav {
