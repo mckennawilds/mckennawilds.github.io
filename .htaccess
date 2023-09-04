@@ -1,0 +1,16 @@
+#code is based on https://www.geeksforgeeks.org/how-to-remove-html-extension-from-url-of-a-static-page/
+#remove html file extension https://example.com/page.html
+# to https://example.com/page
+RewriteEngine On
+RewriteCond %{https://mckennawilds.github.io/index.html} !-d
+RewriteCond %{https://mckennawilds.github.io/index.html} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+
+#https://stackoverflow.com/questions/5730092/how-to-remove-html-from-url
+#RewriteCond %{mckennawilds.github.io/index.html} /([^.]+)\.html [NC]
+#RewriteRule ^ /%1 [NC,L,R]
+#RewriteCond %{mckennawilds.github.io/index.html}.html -f
+#RewriteRule ^ %{mckennawilds.github.io/index.html}.html [NC,L]
+
+# The search engine may index these pages as duplicate content, to overcome this add a <canonical> meta tag in the HTML file. 
+# <link rel="canonical" href="https://example.com/blog/first-blog" />
