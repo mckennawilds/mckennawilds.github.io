@@ -92,168 +92,275 @@ The title is what appears in the tab label on a browser.
 	
 
 
-	<div class="list">
-		<!--
-		------------------------- TITLE -------------------------
-		-->
-
-			<!--
-				This is your name that appears at the top of the webpage
-			--> 
-		<h1 class="name">mckenna wilds</h1>
-			
-		
-
-		<!--
-		------------------------- NAVIGATION MENU -------------------------
-		-->
-			<div class="topnav">
-				<div class="topnav-centered">
-					<a href="./index.html" class="active">home</a>
-					<a href="./about.html" class="inactive">about</a>
-					<a href="./writing.html" class="inactive">writing</a>
-					<!--<a href="./contact.html" class="inactive">Contact</a> -->
-					<a href="mailto:mckenna.wilds@gmail.com">email</a>
-				</div>
-			</div>
-
-		<!--
-		------------------------- PARALLAX -------------------------
-		/* if you do not remove the margin, you will see a vertical scrollbar on the .parallax div */
-		body {
-		  margin: 0;
-		}
-
-		/* parallax "viewport" */
-		.parallax {
-		  height: 100vh;
-
-		  overflow-x: hidden;
-		  overflow-y: auto;
-
-		  perspective: 1px;
-		}
-
-		.parallax-layer {
-		  position: absolute;
-		  top: 0;
-		  right: 0;
-		  bottom: 0;
-		  left: 0;
-		}
-
-		.layer1 {
-		  transform: translateZ(0);
-		}
-
-		.layer2 {
-		  transform: translateZ(-1px);
-		}
-
-		.layer3 {
-		  transform: translateZ(-2px);
-		}
-
-		.parallax-layer.layer1 {
-		  width: 100%;
-		  height: 100rem;
-
-		  background-color: red;
-		}
-
-		.parallax-layer.layer2 {
-		  top: 10rem;
-
-		  width: 100%;
-		  height: 50rem;
-		}
-		.parallax-layer.layer3 {
-		  top: 20rem;
-
-		  width: 100%;
-		  height: 50rem;
-		}
-
-
-
-		<div class="parallax">
-		layer 1 will be the bottom layer, layer 3 will be the top layer
-		<div class="parallax-layer layer1">LAYER 1</div>
-		<div class="parallax-layer layer2">LAYER 2</div>
-		<div class="parallax-layer layer3">LAYER 3</div>
-		</div>
-		-->
-
-
-		<!--
-		------------------------- IMAGE -------------------------
-		max-width=100%,
-		<img src="assets/imgs/flower-raindrops-rotated.jpg", alt="flowers with raindrops", width='1000', height=auto, class='center'>
-		-->
-
-		<!--
-		------------------------- WORK -------------------------
-		-->
-
-		<!-- img next to txt https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html -->
-
-		<style>
-			  .container {
-			  display: flex;
-			  align-items: center;
-			  justify-content: center
-			}
-
-			img {
-			  max-width: 500px;
-			  max-height:500px;
-			}
-
-			.text {
-			  font-size: 20px;
-			  padding-right: 50px;
-			}
-		</style>
-
-	    <div class="shadow_box">
-	    	<a href="http://marathonlitreview.com/2023/08/09/when-bridges-burn-mckenna-wilds/", target="_blank">
-		    <div class="container">
-		      <div class="text">
-
-		        <h2>When Bridges Burn</h2>
-		        <h4>Marathon Literary Review</h4>
-				<h3>Too many people say,<br>“Never say never,” or<br>“Don’t burn your bridges!”<br>as though you were the one<br>who struck the match...</h3>
-		      	
-		      </div>
-		      <div class="image">
-		        <img src="assets/imgs/dnk-photo-e6gNFrIL9Qg-unsplash.jpg">
-		      </div>
-		    </div>
-		    </a>
-		</div>
-
-
-
-	</div> <!-- for list div --> 
-
 	<!--
-	------------------------- BIO -------------------------
+	<div class="list">
 	-->
 
-	<div style="height:100%;background-color:#D8C6B3;color:black;padding:100px 300px 100px 300px;margin:0px;display:inline-block;"> 
-		<div class="grid-container">
+	<!--
+	------------------------- TITLE -------------------------
+	-->
 
-			<div>
-				<strong>McKenna Wilds</strong> (b. 1997) is a poet, fiction and creative nonfiction writer, and spiritual nomad. Her writing often explores bisexuality, friendship and family, spirituality, mental health, feminist theology, mythology, and folklore. Over the years, she has lived in Florida, Georgia, South Carolina, Alabama, California, and now Colorado with her husband and goldendoodle. Most days, she lives wild and free until 9 PM when she'll be found cozy in bed with a good book, a cup of tea, and too many blankets. <br>
-				Find her on Instagram as @mckenna.wilds.
+		<!--
+			This is your name that appears at the top of the webpage
+		--> 
+	<h1 class="name">mckenna wilds</h1>
+		
+	
+	<br> <!-- REMOVE BR AFTER ADDING THE NAV MENU BACK --> 
+
+	<!--
+	------------------------- NAVIGATION MENU -------------------------
+	
+		<div class="topnav">
+			<div class="topnav-centered">
+				<a href="./index.html" class="active">home</a>
+				<a href="./about.html" class="inactive">about</a>
+				<a href="./writing.html" class="inactive">writing</a>
+				<a href="mailto:mckenna.wilds@gmail.com">email</a>
 			</div>
-			<div>
-				<img class='circle', src="assets/imgs/aron-visuals-4zxSWESyZio-unsplash.jpg", alt="headshot", width="200px", height="200px"> 
-				</img>
+		</div>
+	-->
+
+
+	<!--
+	------------------------- PARALLAX -------------------------
+	/* if you do not remove the margin, you will see a vertical scrollbar on the .parallax div */
+	body {
+	  margin: 0;
+	}
+
+	/* parallax "viewport" */
+	.parallax {
+	  height: 100vh;
+
+	  overflow-x: hidden;
+	  overflow-y: auto;
+
+	  perspective: 1px;
+	}
+
+	.parallax-layer {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	}
+
+	.layer1 {
+	  transform: translateZ(0);
+	}
+
+	.layer2 {
+	  transform: translateZ(-1px);
+	}
+
+	.layer3 {
+	  transform: translateZ(-2px);
+	}
+
+	.parallax-layer.layer1 {
+	  width: 100%;
+	  height: 100rem;
+
+	  background-color: red;
+	}
+
+	.parallax-layer.layer2 {
+	  top: 10rem;
+
+	  width: 100%;
+	  height: 50rem;
+	}
+	.parallax-layer.layer3 {
+	  top: 20rem;
+
+	  width: 100%;
+	  height: 50rem;
+	}
+
+
+
+	<div class="parallax">
+	layer 1 will be the bottom layer, layer 3 will be the top layer
+	<div class="parallax-layer layer1">LAYER 1</div>
+	<div class="parallax-layer layer2">LAYER 2</div>
+	<div class="parallax-layer layer3">LAYER 3</div>
+	</div>
+	-->
+
+
+	<!--
+	------------------------- IMAGE -------------------------
+	max-width=100%,
+	<img src="assets/imgs/flower-raindrops-rotated.jpg", alt="flowers with raindrops", width='1000', height=auto, class='center'>
+
+	<div style="background-image: url('assets/imgs/annie-spratt-vs6a4EHj_Ro-unsplash.jpg'); background-repeat: no-repeat; height='200px';">
+	</div>
+
+	style="height:200px;" overflow: hidden;
+	
+
+	<div>
+		<img src="assets/imgs/annie-spratt-vs6a4EHj_Ro-unsplash.jpg"; alt="flowers dark background"; width='100%'; height='150px'; style="object-fit: cover;">
+	</div>
+	-->
+
+	<div style="background-image: url('assets/imgs/annie-spratt-MvA86_qwpEI-unsplash.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+
+		<div style="padding:4em;">
+			<subtitle><b>Poet &<br>Storyteller</b><br><br><br></subtitle>
+		</div>
+		
+
+
+		<center>
+			<div class='block-text'> 
+				<img class='circle', src="assets/imgs/me4.png", alt="headshot", width="200px", height="200px">
+
+				<div>
+					<div style="text-align: left;">
+						<strong>McKenna Wilds</strong> (b. 1997) is an emerging writer. Her work often explores womanhood, friendship and family, fairytales, and folklore. Over the years, she has lived in Florida, Georgia, South Carolina, Alabama, California, and now Colorado with her husband and goldendoodle. She spends most of her afternoons writing at coffee shops and prefers cozy evenings in bed with a good book, a cup of tea, and too many blankets.
+					</div>
+				</div>
 			</div>
-		</div>	
+	</center>
+	
+	</div>
+	
+
+	<!--
+	------------------------- WORK -------------------------
+	-->
+
+	<!-- img next to txt https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html -->
+
+	<!--
+	<div style="display: grid; grid-template-columns: 1fr 1fr; grid-gap: 2em">
+
+	</div> - ending grid container -->
+
+	<div style="margin:4em;">
+
+		<h1>Highlights</h1>
+
+		<div style="display: flex; align-items: center; justify-content: space-around; flex-wrap: wrap;">
+
+			<div class="shadow_box">
+		  	<a href="http://marathonlitreview.com/2023/08/09/when-bridges-burn-mckenna-wilds/", target="_blank">
+					<h2>When Bridges Burn</h2>
+
+				  <div class="grid-container2">
+			      <div>
+
+			        
+
+			        <h4>Marathon Literary Review</h4>
+							<quote>Too many people say,<br>“Never say never,” or<br>“Don’t burn your bridges!”<br>as though you were the one<br>who struck the match...</quote>
+			      </div>
+
+			      <div>
+			      	<center>
+			        	<img src="assets/imgs/dnk-photo-e6gNFrIL9Qg-unsplash.jpg" class=img-quote>
+			        </center>
+			      </div>
+			    </div>
+				</a>
+			</div>
+
+			
+			<div class="shadow_box_inactive">
+		  	<!--<a href="", target="_blank"> -->
+					<h2>There’s Something Ancient Here</h2>
+
+				  <div class="grid-container2">
+				  	<div>
+
+			        <h4>Rushing Through the Dark, Choeofpleirn Press</h4>
+			        <!--
+					<quote>We give Dog a new toy<br>and she skins the tennis ball<br><br>or smiling fox or floppy bird<br>and there's something uncomfortable...</quote>
+				-->
+							<quote>Coming Soon</quote>
+			      </div>
+
+			      <div>
+			        <img src="assets/imgs/8F03591F-F05C-4959-8625-B8325613988E.jpg" class=img-quote>
+			      </div>
+			    </div>
+				<!--</a>-->
+			</div>
+
+
+
+
+			<!--
+			<div class="shadow_box_inactive">
+
+					<h2>Constellations Don't Exist</h2>
+
+				  <div class="grid-container2">
+			      <div>
+
+			        <h4>NiftyLit</h4>
+							<quote>Coming Soon</quote>
+			      </div>
+
+			      <div>
+			        <img src="assets/imgs/mona-eendra-vC8wj_Kphak-unsplash.jpg" class=img-quote>
+			      </div>
+			    </div>
+
+			</div>
+
+		</div>
+	-->
+	</div>
+
+	<!-- 
+
+	flex version instead of grid container:
+	<style>
+	  .container {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center
+	}
+
+	img {
+	  max-width: 100%;
+	  max-height:100%;
+	}
+
+	.text {
+	  font-size: 20px;
+	  padding-left: 20px;
+	}
+  </style>
+
+  <div class="container">
+	  <div class="image">
+	    <img src="https://i.pinimg.com/564x/59/32/29/593229739184504afd9507cc42a9cb86.jpg">
+	  </div>
+	  <div class="text">
+	    <h1>Paris is one of the most magnificient cities in France.</h1>
+	  </div>
+	</div>
+
+	 --> 
+
+
+	<!--
+	------------------------- EMAIL -------------------------
+	<button type="button" onclick="mailto:mckenna.wilds@gmail.com">
+	-->
+
+	<div style="background-image: url('assets/imgs/jacalyn-beales-KDg6MX6Wszs-unsplash.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+		
+		<center><a href="mailto:mckenna.wilds@gmail.com" class="email-button">Email</a></center>
 
 	</div>
+
+	
 
 	<!--
 	------------------------- ICONS -------------------------
@@ -272,6 +379,7 @@ The title is what appears in the tab label on a browser.
 		for accessibility use span not i 
 			<a href="mailto:mckenna.wilds@gmail.com"><span class="fa-solid fa-envelope"></span></a>
 		-->
+
 
 	<!--
 	------------------------- INSTAGRAM -------------------------
@@ -297,12 +405,12 @@ The title is what appears in the tab label on a browser.
 
 	<!--
 	------------------------- COPYRIGHT -------------------------
-	-->
+	
 
 		<div class="copyright">
-			Copyright © 2023 McKenna Wilds All Rights Reserved
+			Copyright © 2024 Haley Cole All Rights Reserved
 		</div>
 
-
+-->
 
 </body>

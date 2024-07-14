@@ -17,8 +17,9 @@ dark olive is #313D1D
 :root {
   --main-bg-color: white;
   --orange: #FFA15C;
-  --magneta: #900C3F;
-  --light-magneta: #BF1054;
+  --magenta: #900C3F;
+  --light-magenta: #BF1054;
+  --dark-magenta: #5A0827; /* or #480620*/
   --olive: #93B557;
 
   --light-green: #E1F4CB;
@@ -34,6 +35,17 @@ html, body{
   color: #651301;
 }
 
+.email-button {
+  background-color: #fff;
+  color: var(--dark-magenta);
+}
+
+.email-button:hover {
+  background-color: var(--light-magenta);
+  color: #fff;
+  border-color: #fff;
+}
+
 /*
 h1 is the bold "Your Name" at the top of the page.
 
@@ -43,6 +55,11 @@ color: black;
 
 already done in main.css
  */
+
+.block-text{
+  background-color: var(--dark-magenta);
+  color: white;
+}
 
 button{
 	color: var(--magneta);
@@ -55,20 +72,26 @@ h2.block{
   color: white;
 }
 
+subtitle{
+  color: white;
+
+}
+
 /*
 h3 is used for the subheadings, like "full-length"
  */
 
-h3{
+quote{
   color: var(--magneta); 
 }
 
 /*
 h4 is used for the dates in this template
+var(--dark-olive)
  */
 
 h4{
-  color: var(--dark-olive);
+  color: var(--dark-magenta);
 }
 
 /*
@@ -84,7 +107,7 @@ This sets the colour of the link when you hover over it
  */
 
 a:hover {
-  color: var(--light-magneta);
+  color: var(--light-magenta);
 }
 
 /*
