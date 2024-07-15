@@ -183,7 +183,7 @@ center {
 .email-button {
   display: inline-block;
   padding: 10px 20px;
-  margin: 6em;
+  margin: 6em 0em 6em 0em;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
@@ -295,7 +295,7 @@ h2{
 	font-family: Josefin Sans;
 	color: black;
 	font-size: 45px;
-  	font-weight: 150;
+  font-weight: 150;
 }
 
 
@@ -475,6 +475,10 @@ a > .fab, a > .fas, a > .fa-solid{
 
 */
 
+.highlights {
+  margin: 4em;
+}
+
 .fab:hover, .fas:hover, .fa-solid:hover{
   background-color: blue;
 }
@@ -487,6 +491,10 @@ a > .fab, a > .fas, a > .fa-solid{
 @-webkit-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+.instagram {
+  padding:50px;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -506,8 +514,8 @@ a > .fab, a > .fas, a > .fa-solid{
         }
 
         subtitle{
-          font-size: 50px;
-          padding: 10px;
+          font-size: 60px;
+          padding: 15px;
         }
 
         .list{
@@ -522,20 +530,39 @@ a > .fab, a > .fas, a > .fa-solid{
         }
 
         .shadow_box {
-          width: 200px;
-          height: 400px;
+          width: 300px;
+          min-width: 200px;
+          height: 500px;
         }
 
         .shadow_box_inactive {
           width: 300px;
-          height: 400px;
+          min-width: 200px;
+          height: 500px;
+        }
+
+        h4 {
+          font-size: 16px;
+        }
+
+        .grid-container2 {
+            grid-template-columns: 1fr;
+            grid-gap: 0px; 
+        }
+
+        .highlights {
+          margin: 1em;
+        }
+
+        h2 {
+          font-size: 30px;
         }
 
         .email-background {
           background-image: url('assets/imgs/jacalyn-beales-KDg6MX6Wszs-unsplash-phone-version.jpg');
         }
 
-        block-text{
+        .block-text{
           /*
           padding: 2em;
           margin: 100px 500px 100px 500px;
@@ -543,16 +570,23 @@ a > .fab, a > .fas, a > .fa-solid{
           max-width: 800px;
           height: 100%;
           margin: 1em 2em 1em 2em;
-          */
-          margin: auto;
+
+
           min-width: 275px;
           max-width: 300px;
+          display: block;
+          width: 100px;
+          */
+          margin: 1em 2em 1em 2em;
           
+          
+          min-width: 200px;
+          max-width: 300px;
         }
 
         .img-quote {
-            max-width: 200px;
-            max-height:200px;
+            max-width: 150px;
+            max-height:175px;
           }
 
         .bioTitle{
@@ -571,6 +605,10 @@ a > .fab, a > .fas, a > .fa-solid{
           top: 0;
           left: 0;
           transform: none;
+        }
+
+        .instagram {
+          padding: 25px;
         }
 
         /*
