@@ -56,16 +56,18 @@ body{
   margin:0px;
   padding: 1em 2em 1em 2em;
   margin: 100px 500px 100px 500px;
-
+  min-width: 250px;
+  
+  
   */
   padding: 2em;
   margin: 0px 0px 50px 0px;
   
-  min-width: 300px;
+  width: 300px;
   max-width: 400px;
   height: 100%;
-  
   display:inline-block;
+  
 }
 
 /* 
@@ -335,7 +337,11 @@ h2.block{
 
 
 subtitle {
+  /* https://stackoverflow.com/questions/20304472/how-to-make-the-font-size-smaller-when-i-resize-the-browser
   font-size: 250px;
+
+  */
+  font-size: 17vw;
   padding: 45px;
   display: block;
 }
@@ -554,7 +560,8 @@ a > .fab, a > .fas, a > .fa-solid{
         }
 
         .highlights {
-          margin: 1em;
+          /* top and bottom margin only, the text will already be centered */
+          margin: 1em 0em 1em 0em;
         }
 
         h2 {
@@ -562,7 +569,9 @@ a > .fab, a > .fas, a > .fa-solid{
         }
 
         .email-background {
-          background-image: url('assets/imgs/jacalyn-beales-KDg6MX6Wszs-unsplash-phone-version.jpg');
+          /* background-image: url('assets/imgs/jacalyn-beales-KDg6MX6Wszs-unsplash-phone-version.jpg'); */
+          background-image: none;
+          background-color: #3F4739;
         }
 
         .block-text{
